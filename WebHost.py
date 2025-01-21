@@ -37,7 +37,7 @@ def get_app() -> "Flask":
     parser = argparse.ArgumentParser(allow_abbrev=False)
     parser.add_argument('--config_override', default=None,
                         help="Path to yaml config file that overrules config.yaml.")
-    parser.add_argument('--port'default=None,
+    parser.add_argument('--port', default=None,
                         help="Port on which to host Archipelago website.")
     args = parser.parse_known_args()[0]
     if args.config_override:
